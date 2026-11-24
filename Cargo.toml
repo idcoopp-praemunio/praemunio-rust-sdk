@@ -1,6 +1,6 @@
 [package]
 name = "praemunio-sdk"
-version = "1.0.3"
+version = "1.0.4"
 authors = ["Praemunio <team@praemunio.org>"]
 description = "Rust client for the Praemunio public API"
 edition = "2021"

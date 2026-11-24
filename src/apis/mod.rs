@@ -112,5 +112,10 @@ impl From<&str> for ContentType {
 }
 
 pub mod default_api;
+pub mod workspaces;
+pub mod teams;
+pub mod teams_members;
+pub mod folders;
+pub mod documents;
 
 pub mod configuration;
