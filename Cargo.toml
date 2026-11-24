@@ -1,0 +1,26 @@
+[package]
+name = "praemunio-sdk"
+version = "1.0.0"
+authors = ["Praemunio <team@praemunio.org>"]
+description = "Rust client for the Praemunio public API"
+edition = "2021"
+license = "Unlicense"
+repository = "https://github.com/praemunio/sdks"
+documentation = "https://docs.praemunio.org"
+keywords = ["praemunio", "api", "sdk", "openapi"]
+categories = ["api-bindings", "web-programming::client"]
+
+[dependencies]
+serde = { version = "^1.0", features = ["derive"] }
+serde_with = { version = "^3.8", default-features = false, features = ["base64", "std", "macros"] }
+serde_json = "^1.0"
+serde_repr = "^0.1"
+url = "^2.5"
+tokio = { version = "^1.46.0", features = ["fs", "rt", "rt-multi-thread"] }
+tokio-util = { version = "^0.7", features = ["codec"] }
+reqwest = { version = "^0.13", default-features = false, features = ["json", "multipart", "stream", "query", "form"] }
+
+[features]
+default = ["native-tls"]
+native-tls = ["reqwest/native-tls"]
+rustls = ["reqwest/rustls"]
