@@ -8,7 +8,7 @@ license = "Unlicense"
 repository = "https://github.com/praemunio/sdks"
 documentation = "https://docs.praemunio.org"
 keywords = ["praemunio", "api", "sdk", "openapi"]
-categories = ["api-bindings", "web-programming::client"]
+categories = ["api-bindings"]
 
 [dependencies]
 serde = { version = "^1.0", features = ["derive"] }
